@@ -62,7 +62,7 @@ body {
     #323264 51.39%,
     #7a425e 87.53%
   );
-  height: 100vh;
+  height: 120vh;
   .intro-bg {
     height: 644px;
     display: flex;
@@ -255,12 +255,15 @@ body {
     margin-top: 60px;
     display: block;
     border-radius: 12px 0 0 12px;
+    width: 100%;
   }
 
   h1 {
     font-size: 42px;
     font-weight: 700;
     line-height: 49.57px;
+
+    margin-bottom: 20px;
 
     background: #ef8080;
     background: -webkit-linear-gradient(to left, #ef8080 0%, #f0145a 100%);
@@ -272,15 +275,15 @@ body {
 
   .textcol {
     margin-top: 60px;
+    padding-top: 40px;
+
     background: $bg-grey;
-    padding-right: 100px;
+    padding-right: 120px;
 
     border-radius: 0 12px 12px 0;
   }
 
   .headlink {
-    padding-top: 40px;
-
     font-weight: bold;
     color: $active;
     opacity: 1;
@@ -368,17 +371,25 @@ body {
     border-radius: 8px;
     padding: 20px 21px 20px 21px;
 
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      background: #e6e6f0;
+    img {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
 
-      width: 93%;
-      height: 3px;
+    time {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        background: #e6e6f0;
 
-      top: 98px;
-      left: calc(50% - 46.5%);
+        width: 100%;
+        height: 3px;
+
+        top: 39px;
+        left: calc(50% - 50%);
+      }
     }
 
     h4 {
